@@ -1,22 +1,48 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Does HKH have Internet?</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Does HKH have Internet?</title>
 </head>
+
 <body>
-    <div>
-        <style>
+  <div>
+    <style>
       div {
         position: fixed;
-        font-size: 10vw;
-        font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 6vw;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-      }</style>
-      <h1>Yes</h1>
-      </div>
+      }
+    </style>
+    <h1 id="internet_status">Checking...</h1>
+
+    <head>
+      <script>
+        function check_available(ip) {
+          var el = document.getElementById("check_pic");
+          el.src = "http://" + ip + "/test.jpg?now=" + Math.random();
+        }
+
+        function check_success(url) {
+          var el = document.getElementById('internet_status');
+          el.innerHTML = 'Yes'
+        }
+      </script>
+    </head>
+
+    <body>
+      <img style="visibility:hidden" id='check_pic' src="/test.jpg"
+        width="0"
+        height="0"
+        onabort="document.getElementById('internet_status').innerHTML = 'Yes';"
+        onload="check_success('ad5e-146-52-54-46.ngrok.io')" onerror="check_available('ad5e-146-52-54-46.ngrok.io')" />
+    </body>
+  </div>
 </body>
+
 </html>
