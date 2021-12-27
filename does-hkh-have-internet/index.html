@@ -21,26 +21,12 @@
     </style>
     <h1 id="internet_status">Checking...</h1>
 
-    <head>
-      <script>
-        function check_available(ip) {
-          var el = document.getElementById("check_pic");
-          el.src = "http://" + ip + "/test.jpg?now=" + Math.random();
-        }
-
-        function check_success(url) {
-          var el = document.getElementById('internet_status');
-          el.innerHTML = 'Yes'
-        }
-      </script>
-    </head>
-
     <body>
-      <img style="visibility:hidden" id='check_pic' src="/test.jpg"
+      <img style="visibility:hidden" id='check_pic' src="http://ad5e-146-52-54-46.ngrok.io/test.jpg"
         width="0"
         height="0"
-        onabort="document.getElementById('internet_status').innerHTML = 'Yes';"
-        onload="check_success('ad5e-146-52-54-46.ngrok.io')" onerror="check_available('ad5e-146-52-54-46.ngrok.io')" />
+        onload="document.getElementById('internet_status').innerHTML = 'Yes';"
+        onerror="document.getElementById('internet_status').innerHTML = 'No';" />
     </body>
   </div>
 </body>
