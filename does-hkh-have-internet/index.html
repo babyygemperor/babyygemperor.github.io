@@ -5,30 +5,54 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Does HKH have Internet?</title>
+  <style>
+    div {
+      position: fixed;
+      font-size: 6vw;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      color: white;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .info {
+      position: absolute;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      bottom: 1%;
+      left: 1%;
+      font-size: 1vw;
+    }
+    .help {
+      position: absolute;
+      color: white;
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      bottom: 0;
+      left: 1%;
+      font-size: 0.75vw;
+    }
+  </style>
 </head>
+
 <body style="background-color: #121212;">
   <div>
-    <style>
-      div {
-        position: fixed;
-        font-size: 6vw;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        color: white;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-      }
-    </style>
     <h1 id="internet_status">Checking...</h1>
 
     <body>
-      <img style="visibility:hidden" id='check_pic' src="https://slippery-swan-7.telebit.io/test.jpg"
-        width="0"
-        height="0"
-        onload="document.getElementById('internet_status').innerHTML = 'Yes';"
+      <img style="visibility:hidden" id='check_pic' src="https://slippery-swan-7.telebit.io/test.jpg" width="0"
+        height="0" onload="document.getElementById('internet_status').innerHTML = 'Yes';"
         onerror="document.getElementById('internet_status').innerHTML = 'No';" />
     </body>
   </div>
+  <body>
+    <p class="info">
+      Note: This tests if my server is connected to the internet or not. <br>
+    </p>
+    <p class="help">
+      Still don't have internet? Try <a href="support/index.html" style="color: white;">this</a>
+    </p>
+  </body>
 </body>
 
 </html>
