@@ -12,9 +12,9 @@ To contribute, just fork the repository and submit a Pull Request.
 
 ---
 A few subdomains are
-- [survey.aamingem.xyz](survey.aamingem.xyz)
-- [instagram.aamingem.xyz](instagram.aamingem.xyz)
-- [donate.aamingem.xyz](donate.aamingem.xyz)
+- [survey.aamingem.xyz](http://survey.aamingem.xyz)
+- [instagram.aamingem.xyz](http://instagram.aamingem.xyz)
+- [donate.aamingem.xyz](http://donate.aamingem.xyz)
 
 for their respective purposes
 
@@ -24,7 +24,7 @@ If you live where I live, you should be able to locally access the website throu
 *Note: The website is only available in http locally*
 
 ---
-### [does-hkh-have-internet](https://github.com/babyygemperor/babyygemperor.github.io/blob/7ba4b638fbd796b7ed7155c77470bab5f72cff8d/does-hkh-have-internet/index.html)
+### [does-hkh-have-internet](https://github.com/babyygemperor/babyygemperor.github.io/blob/main/does-hkh-have-internet/index.html)
 
 This webpage attempts to load a payload from my home server through a telebit-tunnel.\
 When the payload is successfully loaded,
