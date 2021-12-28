@@ -24,6 +24,7 @@
       left: 1%;
       font-size: 1vw;
     }
+
     .help {
       position: absolute;
       color: white;
@@ -42,15 +43,17 @@
     <body>
       <img style="visibility:hidden" id='check_pic' src="https://slippery-swan-7.telebit.io/test.jpg" width="0"
         height="0" onload="document.getElementById('internet_status').innerHTML = 'Yes';"
-        onerror="document.getElementById('internet_status').innerHTML = 'No';" />
+        onerror="
+          document.getElementById('internet_status').innerHTML = 'No';
+          document.getElementById('info').innerHTML = 'Note: This tests if my server is connected to the internet or not.'
+          document.getElementById('help').innerHTML = 'Still don\'t have internet? Try <a href=\'support\/\' style=\'color: white;\'>this</a>'" />
     </body>
   </div>
+
   <body>
-    <p class="info">
-      Note: This tests if my server is connected to the internet or not. <br>
+    <p class="info" id="info">
     </p>
-    <p class="help">
-      Still don't have internet? Try <a href="support/" style="color: white;">this</a>
+    <p class="help" id="help">
     </p>
   </body>
 </body>
