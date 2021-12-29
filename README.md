@@ -20,7 +20,7 @@ A few subdomains are
 for their respective purposes
 
 ---
-If you live where I live, you should be able to locally access the website through [this link](http://192.168.22.69).
+If you live where I live, you should be able to locally access the website through [this link](http://192.168.22.169).
 
 *Note: The website is only available in http locally*
 
