@@ -4,7 +4,7 @@
 ### MY GIT IGNORE ###
 .idea
 surveys/results/*.png
-
+test.jpg
 ### Linux ###
 *~
 
