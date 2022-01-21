@@ -49,6 +49,12 @@ Simple page to redirect to [github.aamingem.xyz](http://github.aamingem.xyz)
 Simple page to redirect to [instagram.aamingem.xyz](http://instagram.aamingem.xyz)
 
 ---
+### [/resume](https://github.com/babyygemperor/babyygemperor.github.io/blob/main/resume/index.html)
+
+Simple page which loads [resume.pdf](https://www.aamingem.xyz/resume/) from my server using a tunnel. Should work as 
+long as my localhost is up and running.
+
+---
 ### [/surveys](https://github.com/babyygemperor/babyygemperor.github.io/blob/main/surveys/index.html)
 
 A page where to show the active surveys and their [results](https://github.com/babyygemperor/babyygemperor.github.io/blob/main/surveys/results/index.html) \
